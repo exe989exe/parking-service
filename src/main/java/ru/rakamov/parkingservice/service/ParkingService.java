@@ -6,12 +6,13 @@ import org.springframework.stereotype.Service;
 import ru.rakamov.parkingservice.entity.ParkingEntity;
 import ru.rakamov.parkingservice.record.ParkingReport;
 import ru.rakamov.parkingservice.repository.ParkingRepository;
+import ru.rakamov.parkingservice.service.impl.ParkingServiceImpl;
 
 import java.time.LocalDateTime;
 
 @Service
 @RequiredArgsConstructor
-public class ParkingService {
+public class ParkingService implements ParkingServiceImpl {
 
     private final ParkingRepository parkingRecordRepository;
 
